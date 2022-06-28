@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Css/estilos.css">
+  
+	<title>Gresh</title>
+</head>
+<!-- Inicio de Body -->
+<body>
+<!--Inicio de Header-->
+<header>
+		<h1>GRESH</h1>
+		<nav>
+			<ul class="color-menu">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="Productos.html">Productos</a></li>
+				<li><a href="Nosotros.html">Nosotros</a></li>
+				<li><a href="Contacto.html">Contacto</a></li>
+				<li><a href="Ubicación.html">Ubicación</a></li>
+			</ul>
+		</nav>
+</header>
+<!--Inicio de Main-->
+<main>
+        <h2>Contacto</h2>		
+        <form action="Contacto.html" method="GET" enctype="application/x-www-form-urlencoded">
+            <fieldset id="fieldset-contacto">
+              <legend>Datos Personales</legend>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" placeholder="Ingresa tu Nombre" />
+                <label for="apellido">Apellido: </label>
+                <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu Apellido" />
+                <br /><br />
+        
+                <div>
+                  <label for="sexo">Sexo</label><br />
+                  <input type="radio" name="sexo" id="Hombre" value="Hombre" />
+                  <label for="Hombre">Hombre</label><br>
+                  <input type="radio" name="sexo" id="Mujer" value="Mujer" />
+                  <label for="Mujer">Mujer</label><br>
+                </div>
+                <br /><br />
+        
+                <div>
+                  <label for="comentarios">¿Cómo conociste Gresh?</label><br />
+                  <textarea name="comentarios" id="comentarios" rows="5" cols="40"></textarea>
+                </div>
+            </fieldset>
+            <br /><br />
+            <div>
+              <input type="submit" value="Enviar formulario"/>
+              <input type="reset" value="Limpiar formulario"/>
+              <input type="button" value="Sin acciones"/>
+            </div>
+          </form>
+	</main>
+<!--Inicio de Footer-->
+    <footer>
+        <p>Todo hecho a mano, con productos de nuestro país</p>
+    </footer>
+</body>
+</html>
